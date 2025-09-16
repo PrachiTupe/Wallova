@@ -1,0 +1,79 @@
+.photo-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.photo-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 2s ease;
+}
+
+.photo-card:hover .photo-image {
+  transform: scale(1.03);
+}
+
+.photo-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.55) 20%, rgba(0, 0, 0, 0) 50%);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+.photo-card:hover .photo-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.photo-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  max-width: 50%;
+  text-align: left;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.photo-title {
+  margin: 0;
+  font-weight: 300; /* Thin text */
+  color: #ffffffac;
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+
+.photo-photographer {
+  margin: 0;
+  font-weight: 300; /* Thin text */
+  color: #c3c3c3ac;
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+.photo-download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  margin-bottom: 16px;
+  margin-right: 16px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.221);
+  color: white;
+  transition: background 0.7s ease;
+}
+
+.photo-download:hover {
+  background: rgba(0, 0, 0, 0.509);
+}

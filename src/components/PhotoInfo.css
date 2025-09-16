@@ -1,0 +1,20 @@
+.photo-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ✅ centers image */
+  justify-content: center;
+  text-align: center;
+}
+
+_details h2 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+
+
+.photo-info__details a:hover {
+  text-decoration: underline;
+}
+
+/* You can remove the old download styles if using DownloadOptions component */

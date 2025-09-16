@@ -1,0 +1,84 @@
+/* ---------- PHOTO DETAILS (Page Wrapper) ---------- */
+.photo-details {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  color: #333;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* space between sections */
+}
+
+/* Header: back + download */
+.photo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ---------- PHOTO INFO (Image + Photographer Info) ---------- */
+.photo-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* ✅ centers horizontally */
+  text-align: center;
+}
+
+.photo-info__image {
+  max-width: 90%;        /* responsive */
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.photo-info__details {
+  margin-top: 10px;
+}
+
+.photo-info__details h2 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.photo-info__details a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.photo-info__details a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- RELATED PHOTOS ---------- */
+.related-photos {
+  text-align: center;
+}
+
+.related-photos h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #333;
+  position: relative;
+  display: inline-block;
+}
+
+.related-photos h3::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 12px auto 0;
+}
+
+.related-photos .grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+}

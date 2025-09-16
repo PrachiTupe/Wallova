@@ -1,0 +1,64 @@
+.download-options {
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.download-main-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000000;
+  color: rgb(255, 254, 254);
+  cursor: pointer;
+}
+
+.download-main-btn:hover {
+  background-color: #302d2d;
+}
+
+.download-dropdown {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: rgb(241, 237, 237);
+  border: 1px solid #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  width: 220px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.download-dropdown p {
+  margin: 0 0 8px;
+  font-weight: bold;
+}
+
+.download-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 8px;
+}
+
+.download-dropdown li {
+  margin-bottom: 6px;
+}
+
+.download-dropdown input[type="radio"] {
+  margin-right: 6px;
+}
+
+.download-select-btn {
+  width: 100%;
+  padding: 6px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #000000;
+  color: rgb(255, 254, 254);
+  cursor: pointer;
+}
+
+.download-select-btn:hover {
+  background-color: #1e1e1e;
+}

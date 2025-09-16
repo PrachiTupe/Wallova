@@ -1,0 +1,64 @@
+/* Full black theme */
+.home-page {
+  background-color: #ffffff;
+  color: #fff;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Sticky top bar */
+.top-bar {
+  margin-top: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff; /* Fully black */
+  transition: all 0.3s ease;
+}
+
+/* Shrink logo on scroll */
+.top-bar.scrolled .logo {
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.logo {
+  height: 50px;
+  transition: all 0.7s ease;
+  margin-bottom: 15px;
+}
+
+/* Main content centered */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #ffffff;
+}
+
+/* Grid container with responsive width */
+.grid {
+  width: 60.5%;
+  max-width: 20000px; /* optional: prevents too wide on very large screens */
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  background-color: #3da6ab;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 968px) {
+  .grid {
+    width: 95%;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+}

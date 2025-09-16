@@ -1,0 +1,43 @@
+.video-card {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.video-card:hover {
+  transform: scale(1.03);
+}
+
+.video-card__thumbnail {
+  position: relative;
+}
+
+.video-card__thumbnail img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+.video-card__duration {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+.video-card__info {
+  padding: 5px 0;
+  text-align: left;
+}
+
+.video-card__info h4 {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}

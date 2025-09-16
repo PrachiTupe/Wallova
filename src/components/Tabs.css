@@ -1,0 +1,45 @@
+.tabs {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4efef;
+  border: 1px solid #fffbfb;
+  border-radius: 40px;
+  padding: 6px;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+
+.tab-btn {
+  position: relative;
+  background: transparent;
+  color: #8b8b8b;
+  border: none;
+  outline: none;
+  padding: 10px 35px;
+  font-size: 0.95rem;
+  font-weight: 400;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  z-index: 1;
+}
+
+.tab-btn.active {
+  color: #fff;
+}
+
+.tab-btn:hover {
+  color: #ccc;
+}
+
+.tab-indicator {
+  position: absolute;
+  height: calc(100% - 12px);
+  background: linear-gradient(135deg, #222, #111);
+  border-radius: 30px;
+  transition: all 0.4s ease;
+  z-index: 0;
+}
